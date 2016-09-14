@@ -1,0 +1,21 @@
+http://rosalind.info/problems/nwck/
+
+Distances in Trees
+
+Problem
+
+Newick format is a way of representing trees even more concisely than using an adjacency list, especially when dealing with trees whose internal nodes have not been labeled.
+
+Given: A collection of n trees (n≤40) in Newick format, with each tree containing at most 200 nodes; each tree Tk is followed by a pair of nodes xk and yk in Tk.
+
+Return: A collection of nn positive integers, for which the kth integer represents the distance between xk and yk in Tk.
+
+Sample Dataset
+(cat)dog;
+dog cat
+
+(dog,cat);
+dog cat
+
+Sample Output
+1 2
