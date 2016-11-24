@@ -1,0 +1,25 @@
+http://rosalind.info/problems/glob/
+
+Global Alignment with Scoring Matrix
+
+Problem
+
+To penalize symbol substitutions differently depending on which two symbols are involved in the substitution, we obtain a scoring matrix S in which S[i,j] represents the (negative) score assigned to a substitution of the iith symbol of our alphabet 𝒜 with the jth symbol of 𝒜.
+
+A gap penalty is the component deducted from alignment score due to the presence of a gap. A gap penalty may be a function of the length of the gap; for example, a linear gap penalty is a constant gg such that each inserted or deleted symbol is charged g; as a result, the cost of a gap of length L is equal to gL.
+
+Given: Two protein strings s and t in FASTA format (each of length at most 1000 aa).
+
+Return: The maximum alignment score between s and t. Use:
+
+The BLOSUM62 scoring matrix.
+Linear gap penalty equal to 5 (i.e., a cost of -5 is assessed for each gap symbol).
+
+Sample Dataset
+>Rosalind_67
+PLEASANTLY
+>Rosalind_17
+MEANLY
+
+Sample Output
+8
